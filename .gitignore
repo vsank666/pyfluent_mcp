@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime logs / generated at run time — machine-specific, not source
+logs/
+*.trn
+*.log
+cleanup-fluent-*.bat
+fluent-*-error.log
+
+# Local case/data files (large binaries, not part of the MCP package)
+*.cas.h5
+*.dat.h5
+*.msh.h5
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Env
+.env

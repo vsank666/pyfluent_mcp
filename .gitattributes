@@ -1,0 +1,10 @@
+# Normalize line endings; let Git handle CRLF/LF conversion on checkout/commit
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+LICENSE text eol=lf

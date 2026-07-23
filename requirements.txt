@@ -1,0 +1,33 @@
+# Required by pyfluent_mcp_server.py. Pin versions exactly — see the
+# "Customize / maintain" section in README.md.
+mcp>=1.0
+ansys-fluent-core==0.40.1
+grpcio==1.71.2
+grpcio-tools==1.71.2
+grpcio-health-checking==1.71.2
+grpcio-reflection==1.71.2
+grpcio-status==1.71.2
+protobuf==5.29.6
+
+# Optional: enables cross-platform process listing/killing for
+# list_fluent_processes/kill_fluent_processes and launch_fluent's
+# kill_existing option. Without it, those tools fall back to the
+# platform's native tasklist/taskkill (Windows) or ps/kill (POSIX).
+psutil>=5.9
+
+# Post-processing (field data / PyVista rendering / plots). Required by
+# get_surface_scalar_data, render_contour, render_velocity_vectors,
+# render_streamlines, render_iso_surface, render_heat_flux_map,
+# render_vof_interface, and run_until_convergence's convergence-history
+# plot. Each of these tools catches ImportError and returns a clear
+# "not installed" error rather than crashing, but they will NOT function
+# without these two installed.
+numpy>=1.24
+pyvista>=0.44
+matplotlib>=3.8
+
+# Report generation (generate_simulation_report). Required only for
+# fmt="docx" / fmt="pptx"; fmt="txt" needs neither. Also caught as a clear
+# ImportError message if missing, not a crash.
+python-docx>=1.1
+python-pptx>=0.6.23
