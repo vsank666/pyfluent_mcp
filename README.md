@@ -1,6 +1,6 @@
 # PyFluent MCP (core, no-KB)
 
-**Developed by Vijay Sankaran**
+**Developed by Vijaya Sankaran K**
 
 **License:** [PolyForm Noncommercial 1.0.0](LICENSE) — free for noncommercial use; commercial use requires a separate license (see [License](#license) below).
 
